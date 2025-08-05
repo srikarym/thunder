@@ -102,7 +102,7 @@ def download_dataset(dataset: str):
         logging.info(
             f"Folder {dataset} already exists in {root_folder}, skipping download."
         )
-        pass
+        return
 
     Path(root_folder).mkdir(parents=True, exist_ok=True)
 
